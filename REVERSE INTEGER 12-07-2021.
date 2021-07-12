@@ -1,0 +1,24 @@
+import java.util.*;
+class Reverse
+{
+  public static void main (String[]args)
+  {
+    Scanner sc = new Scanner (System.in);
+    String str = sc.next ();
+      System.out.print ("ENTER THE INSERTING STRING=");
+    String ins = sc.next ();
+      System.out.println ("ENTER POSITION TO INSERT");
+    int p = sc.nextInt ();
+    StringBuilder sb = new StringBuilder (str);
+      sb.insert (p, ins);
+      System.out.print (sb.toString ());
+  }
+}
+--------------------------------------------------------------------------------------------------------------------------------------------------
+OUTPUT:
+C:\Users\hp>javac Reverse.java
+C:\Users\hp>java Reverse
+Hello World
+ENTER THE INSERTING STRING=Hi
+ENTER POSITION TO INSERT:1
+HHIello WHiorld
